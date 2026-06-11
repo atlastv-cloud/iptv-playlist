@@ -6,8 +6,8 @@ https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_med/playlist.m3u8?k=
 #EXTINF:-1 tvg-id="NandutiTV" tvg-name="Nanduti TV" group-title="Paraguay",Nanduti TV (HLS)
 https://copacogen.desdeparaguay.net/nandutitv/nandutitv_baja/chunklist_w1258874844.m3u8?k=e0508f61a96254fc23a866a2ce4b2fd884c3b3e0522109736102b50f1d05ac3a&exp=1781205903
 
-#EXTINF:-1 tvg-id="GenTV" tvg-name="GEN TV" group-title="Paraguay",GEN TV
-https://zn1tf.desdeparaguay.net/gentv/gentv_int_baja/chunklist_w1053210514.m3u8
+#EXTINF:-1,GEN TV (PY) - HLS
+https://copacogen.desdeparaguay.net/gentv/gentv_py_baja/chunklist_w174812663.m3u8
 
 #EXTINF:-1 tvg-id="DMLive" tvg-name="DM Live" group-title="Online",DM Live (720p)
 https://live2.eu-north-1a.cf.dmcdn.net/sec2(Zk8zuK-kr9yydBrcftkn2Jgxq2_Y1zN5lPUPGgEW_Kmm7SejyWn2t5YshvKgIaw43zlcHa2uJZ1P7eG4WqQcD28qYQFrulqbgh6tpVn8CdmC-7J0d1ltqEwpO9xxaZb0)/cloud/3/x9ksaba/s/live-720.m3u8
