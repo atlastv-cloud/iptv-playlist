@@ -1,7 +1,7 @@
 #EXTM3U
 
-#EXTINF:-1,Telefuturo
-https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_med/playlist.m3u8?k=7fa1553d1d7a694c9f7c196d75012e76714770d9c0918a3b16c80cdb72f6de9e&exp=1781205300
+#EXTINF:-1,TeleFuturo SD
+https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_baja/playlist.m3u8?admin=nacion
 
 #EXTINF:-1,Nanduti TV
 https://copacogen.desdeparaguay.net/nandutitv/nandutitv_baja/chunklist_w1258874844.m3u8?k=e0508f61a96254fc23a866a2ce4b2fd884c3b3e0522109736102b50f1d05ac3a&exp=1781205903
@@ -10,13 +10,13 @@ https://copacogen.desdeparaguay.net/nandutitv/nandutitv_baja/chunklist_w12588748
 https://copacogen.desdeparaguay.net/nandutitv/nandutitv_baja/master.m3u8
 
 #EXTINF:-1,ABC Cardinal
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(AWNbO9SYD0MpDmLevrbRKowdS_Xronx6BI9TvJL4Dm0uiYz3218TK7HisOCfxbOvOx8HcnN1_Ac9SoZHyexqd7zZ6AqMPOVldAAioCm-M4oYtwoT0R0p3CgXvLEYT_uL)/cloud/3/x9skr3m/d/live-720.m3u8
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(sxDqIwQbtVPqvOU3hgsNBHrNAVslvA8QjcOV0qRU1md-UuXj9wAi6uDl8IlIYPdXwv8ACzGLss5huUYd3XKCoc_T_Umaz5RugJ-hlcQBn6FbVVktFtHZIqRf7UsHuKDq)/cloud/3/x9skr3m/d/live-720.m3u8
 
 #EXTINF:-1,GEN HD
 https://gentvpeer.desdeparaguay.net/gentvpeer/gentv_py_alta/master.m3u8
 
 #EXTINF:-1,Trece
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(Zk8zuK-kr9yydBrcftkn2Jgxq2_Y1zN5lPUPGgEW_Kmm7SejyWn2t5YshvKgIaw43zlcHa2uJZ1P7eG4WqQcD28qYQFrulqbgh6tpVn8CdmC-7J0d1ltqEwpO9xxaZb0)/cloud/3/x9ksaba/s/live-720.m3u8
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(60AMsSDkt-P49gr17U4IkkVlCev6reOJDJ4py346G5TrwNQSrcGqEWRucwUtVePBHkkAUG-WvyQf083h2iHjvpsgHiYrdcZnuxxzJX8gEWA_p_qBj8yCCX3D1AtP_zSx)/cloud/3/x9ksaba/s/live-720.m3u8
 
 #EXTINF:-1,La Tele
 https://copacotf.desdeparaguay.net/latele/latele_py_baja/chunklist_w1077902691.m3u8?admin=tvaccion
