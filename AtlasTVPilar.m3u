@@ -33,6 +33,9 @@ https://video.hostingcaaguazu.com:19360/nandeportetepe/nandeportetepe.m3u8
 #EXTINF:-1,Universo TV
 https://copacogen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?admin=nacion
 
+#EXTINF:-1,TyC Sports Argentina
+https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
+
 #EXTINF:-1,FTV Bolivia
 https://master.tucableip.com/ftvhd/index.m3u8
 
@@ -48,6 +51,12 @@ https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
 #EXTINF:-1,E40 Paraguay
 https://copacotf.desdeparaguay.net/e40tv/e40tv_py_alta/playlist.m3u8?admin=tvaccion
 
+#EXTINF:-1,Cumbia MIX Argentina
+https://cloud.tvomix.com/CUMBIAMIX/index.m3u8
+
+#EXTINF:-1,TV Corrientes
+http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
+
 #EXTINF:-1,Latele
 https://copacotf.desdeparaguay.net/latele/latele_py_alta/playlist.m3u8?admin=tvaccion
 
@@ -62,3 +71,6 @@ https://copacoradios.desdeparaguay.net/rcctv/rcctv/playlist.m3u8?admin=nacion
 
 #EXTINF:-1,Venus
 https://tigocloud.desdeparaguay.net/venusmedia/venusmedia/playlist.m3u8
+
+#EXTINF:-1,America TV Argentina
+https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8
