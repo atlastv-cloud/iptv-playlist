@@ -1,1 +1,4 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-name="Atlas Sport PILAR" group-title="Deportes",Atlas Sport PILAR
+http://192.168.1.105:8080/simple.m3u8
