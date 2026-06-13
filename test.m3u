@@ -1,7 +1,4 @@
 #EXTM3U
 
-#EXTINF:-1,Mi Prueba
-http://192.168.1.105:8080/mystream.m3u8
-
-#EXTINF:-1 tvg-name="Mi Prueba Local" group-title="Deportes",Mi Prueba Local
-http://192.168.1.105:8080/mystream.m3u8
+#EXTINF:-1 tvg-name="Mi Prueba" group-title="Deportes",Mi Prueba
+http://192.168.1.105:8080/simple.m3u8
