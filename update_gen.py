@@ -1,0 +1,49 @@
+import re
+from playwright.sync_api import sync_playwright
+
+PLAYLIST_FILE = "AtlasTVPilar.m3u"
+
+def get_gen_stream():
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+
+        m3u8_url = None
+
+        def handle_request(request):
+            nonlocal m3u8_url
+            if ".m3u8" in request.url and "gentv_py_baja" in request.url:
+                m3u8_url = request.url
+
+        page.on("request", handle_request)
+
+        page.goto("https://www.gen.com.py/", timeout=60000)
+
+        page.get_by_text("Reproductor 2").click()
+
+        page.wait_for_timeout(5000)
+
+        browser.close()
+
+        return m3u8_url
+
+def update_playlist(new_url):
+    with open(PLAYLIST_FILE, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    updated = re.sub(
+        r"https://copacogen\.desdeparaguay\.net/gentv/.*?\.m3u8.*",
+        new_url,
+        content
+    )
+
+    with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
+        f.write(updated)
+
+if __name__ == "__main__":
+    url = get_gen_stream()
+    if url:
+        update_playlist(url)
+        print("GEN actualizado:", url)
+    else:
+        print("No se encontró stream.")
