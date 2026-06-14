@@ -1,35 +1,46 @@
-name: Update GEN Stream
+from playwright.sync_api import sync_playwright
 
-on:
-  schedule:
-    - cron: "*/30 * * * *"
-  workflow_dispatch:
+PLAYLIST_FILE = "AtlasTVPilar.m3u"
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
+def get_gen_stream():
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
 
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+        m3u8_url = None
 
-      - name: Install Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
+        def handle_request(request):
+            nonlocal m3u8_url
+            if ".m3u8" in request.url and "gentv_py_baja" in request.url:
+                m3u8_url = request.url
 
-      - name: Install dependencies
-        run: |
-          pip install playwright
-          playwright install
+        page.on("request", handle_request)
 
-      - name: Run updater
-        run: python update_gen.py
+        page.goto("https://www.gen.com.py/", timeout=60000)
+        page.get_by_text("Reproductor 2").click()
+        page.wait_for_timeout(6000)
 
-      - name: Commit changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add AtlasTVPilar.m3u
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto update GEN stream"
-          git push
+        browser.close()
+        return m3u8_url
+
+
+def update_playlist(new_url):
+    with open(PLAYLIST_FILE, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    for i in range(len(lines)):
+        if lines[i].strip() == "#EXTINF:-1,GEN HD":
+            lines[i + 1] = new_url + "\n"
+            break
+
+    with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
+
+if __name__ == "__main__":
+    url = get_gen_stream()
+    if url:
+        update_playlist(url)
+        print("GEN actualizado:", url)
+    else:
+        print("No se encontró stream.")
