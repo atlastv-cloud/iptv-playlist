@@ -11,17 +11,22 @@ def get_gen_stream():
 
         def handle_request(request):
             nonlocal m3u8_url
-            if ".m3u8" in request.url and "gentv_py_baja" in request.url:
+            if (
+                ".m3u8" in request.url
+                and "gentv_py_baja" in request.url
+                and "k=" in request.url
+            ):
                 m3u8_url = request.url
 
         page.on("request", handle_request)
 
         page.goto("https://www.gen.com.py/", timeout=60000)
 
-        # ✅ Ahora hacemos click en el botón correcto
+        # Click en GEN 2
         page.get_by_text("GEN 2").click()
 
-        page.wait_for_timeout(8000)
+        # Esperar que aparezca el stream firmado
+        page.wait_for_timeout(10000)
 
         browser.close()
         return m3u8_url
@@ -46,4 +51,4 @@ if __name__ == "__main__":
         update_playlist(url)
         print("GEN actualizado:", url)
     else:
-        print("No se encontró stream.")
+        print("No se encontró stream firmado.")
