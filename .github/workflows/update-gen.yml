@@ -1,17 +1,35 @@
+name: Update GEN Stream
 
-0s
-Run python update_gen.py
-  python update_gen.py
-  shell: /usr/bin/bash -e {0}
-  env:
-    pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
-    PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
-    Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-    Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-    Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
-    LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
-  File "/home/runner/work/iptv-playlist/iptv-playlist/update_gen.py", line 1
-    name: Update GEN Stream
-                 ^^^
-SyntaxError: invalid syntax
-Error: Process completed with exit code 1.
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+
+      - name: Run updater
+        run: python update_gen.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add AtlasTVPilar.m3u
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto update GEN stream"
+          git push
