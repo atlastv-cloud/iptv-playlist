@@ -17,8 +17,11 @@ def get_gen_stream():
         page.on("request", handle_request)
 
         page.goto("https://www.gen.com.py/", timeout=60000)
-        page.get_by_text("Reproductor 2").click()
-        page.wait_for_timeout(6000)
+
+        # ✅ Ahora hacemos click en el botón correcto
+        page.get_by_text("GEN 2").click()
+
+        page.wait_for_timeout(8000)
 
         browser.close()
         return m3u8_url
