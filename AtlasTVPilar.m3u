@@ -13,10 +13,10 @@ https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_baja/playlist.m3u8?a
 https://rockandpop.b-cdn.net/720p.m3u8
 
 #EXTINF:-1,La Popu TV
-https://copacogen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?admin=nacion
+https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=15b80414806d90a373c282f1927d66bfb6acdbc48d763f501f6fc620fc0fcd88&exp=1781646729
 
 #EXTINF:-1,ABC Cardinal
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(3ZSqzHYaUIFUPWucEz7DD0yNZgzGBqZFdKnXSc3vM7T3F-bNxVRf9fqm867qni92q8p2yqLzLZgjANc67TKVMglJJ9oN9ZAp1SkL27VBWeXyoQlesoQUiXw5z7Isv9j9)/cloud/3/x9skr3m/d/live-720.m3u8
+https://dmxleo.dailymotion.com/cdn/manifest/video/kQRS6ZAjGuMkByE4Mtc.m3u8?bs=1&rid=0&cookie_sync_ab_gk=1&reader_gdpr_flag=0&reader_gdpr_consent=&gdpr_binary_consent=opt-out&gdpr_comes_from_infopack=0&reader_us_privacy=1---&eb=https%3A%2F%2Fwww.abc.com.py%2F
 
 #EXTINF:-1,Almaya TV
 https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
