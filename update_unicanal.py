@@ -18,15 +18,13 @@ def get_unicanal_stream():
 
         page.goto("https://unicanal.com.py/en-vivo/", timeout=60000)
 
-        # Esperar que cargue el iframe del reproductor
         page.wait_for_selector("iframe")
 
         frame = page.frame_locator("iframe")
 
-        # Hacer click dentro del reproductor para forzar reproducción
-        frame.locator("body").click()
+        # Esperar botón Play dentro del iframe
+        frame.locator('button[aria-label="Play"]').click()
 
-        # Esperar que se generen las requests del stream
         page.wait_for_timeout(12000)
 
         browser.close()
