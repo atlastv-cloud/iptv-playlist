@@ -1,31 +1,22 @@
-from playwright.sync_api import sync_playwright
+import requests
 
 PLAYLIST_FILE = "AtlasTVPilar.m3u"
+VIDEO_ID = "k4nLYiNrBX8W5jDbSlM"
 
 def get_trece_stream():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+    url = f"https://www.dailymotion.com/player/metadata/video/{VIDEO_ID}"
+    response = requests.get(url, timeout=15)
 
-        m3u8_url = None
+    if response.status_code != 200:
+        return None
 
-        def handle_request(request):
-            nonlocal m3u8_url
-            if "live-720.m3u8" in request.url and "dmcdn.net" in request.url:
-                m3u8_url = request.url
+    data = response.json()
 
-        page.on("request", handle_request)
-
-        page.goto("https://trece.com.py/en-vivo/", timeout=60000)
-
-        # Esperar iframe real de Dailymotion
-        page.wait_for_selector('iframe[src*="dailymotion"]')
-
-        # Esperar que el player cargue y dispare requests
-        page.wait_for_timeout(15000)
-
-        browser.close()
-        return m3u8_url
+    try:
+        hls_url = data["qualities"]["auto"][0]["url"]
+        return hls_url
+    except (KeyError, IndexError):
+        return None
 
 
 def update_playlist(new_url):
@@ -47,4 +38,4 @@ if __name__ == "__main__":
         update_playlist(url)
         print("Trece actualizado:", url)
     else:
-        print("No se encontró stream HD de Trece.")
+        print("No se pudo obtener stream de Trece.")
