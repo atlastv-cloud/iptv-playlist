@@ -18,20 +18,33 @@ def get_unicanal_stream():
 
         page.goto("https://unicanal.com.py/en-vivo/", timeout=60000)
 
-        # Esperar específicamente el iframe de Dailymotion
+        # Esperar el iframe real de Dailymotion (no publicidad)
         page.wait_for_selector('iframe[src*="dailymotion"]')
 
-        frame = page.frame_locator('iframe[src*="dailymotion"]')
-
-        # Click en el botón real de Play dentro del iframe
-        frame.locator('button[aria-label="Play"]').click()
-
-        # Esperar que se generen las requests del stream
-        page.wait_for_timeout(12000)
+        # Esperar que el player cargue y dispare las requests del stream
+        page.wait_for_timeout(15000)
 
         browser.close()
         return m3u8_url
 
 
 def update_playlist(new_url):
-    with 
+    with open(PLAYLIST_FILE, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    for i in range(len(lines)):
+        if lines[i].strip() == "#EXTINF:-1,Unicanal HD":
+            lines[i + 1] = new_url + "\n"
+            break
+
+    with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
+
+if __name__ == "__main__":
+    url = get_unicanal_stream()
+    if url:
+        update_playlist(url)
+        print("Unicanal actualizado:", url)
+    else:
+        print("No se encontró stream HD de Unicanal.")
