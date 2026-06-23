@@ -18,15 +18,11 @@ def get_trece_stream():
 
         page.goto("https://trece.com.py/en-vivo/", timeout=60000)
 
-        # Esperar iframe específico de Dailymotion
+        # Esperar iframe real de Dailymotion
         page.wait_for_selector('iframe[src*="dailymotion"]')
 
-        frame = page.frame_locator('iframe[src*="dailymotion"]')
-
-        # Click en botón Play real
-        frame.locator('button[aria-label="Play"]').click()
-
-        page.wait_for_timeout(12000)
+        # Esperar que el player cargue y dispare requests
+        page.wait_for_timeout(15000)
 
         browser.close()
         return m3u8_url
