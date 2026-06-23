@@ -1,7 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1,Trece
-https://falso.test/live-720.m3u8
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(2mQA4AxMKixvG8KUGXrcYMSc4k4emnuxKeBi6DYIoa3E86XZ5KE_RntQ2bZEu-IIaBHrW2tGXRD5b-hqyi3kxqDyRMYd4qyM1On4H5xhKSNV1qpukQROM4A8lph7zNFW)/cloud/3/x9ksaba/s/live-720.m3u8#cell=lcf2-eu-north-1a
 
 #EXTINF:-1,GEN HD
 https://no.gendigi.net/origin-proxy/playlist.m3u8
