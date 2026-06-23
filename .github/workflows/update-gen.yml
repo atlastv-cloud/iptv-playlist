@@ -27,6 +27,7 @@ jobs:
         run: |
           python update_gen.py
           python update_trece.py
+          python update_unicanal.py
 
       - name: Commit changes
         run: |
