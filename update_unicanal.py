@@ -11,18 +11,23 @@ def get_unicanal_stream():
 
         def handle_request(request):
             nonlocal m3u8_url
-            if (
-                "live-720.m3u8" in request.url
-                and "dmcdn.net" in request.url
-            ):
+            if "live-720.m3u8" in request.url and "dmcdn.net" in request.url:
                 m3u8_url = request.url
 
         page.on("request", handle_request)
 
         page.goto("https://unicanal.com.py/en-vivo/", timeout=60000)
 
-        # Esperar que cargue el player
-        page.wait_for_timeout(10000)
+        # Esperar que cargue el iframe del reproductor
+        page.wait_for_selector("iframe")
+
+        frame = page.frame_locator("iframe")
+
+        # Hacer click dentro del reproductor para forzar reproducción
+        frame.locator("body").click()
+
+        # Esperar que se generen las requests del stream
+        page.wait_for_timeout(12000)
 
         browser.close()
         return m3u8_url
