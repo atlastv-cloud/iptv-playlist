@@ -1,13 +1,13 @@
 #EXTM3U
 
 #EXTINF:-1,Trece
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(2mQA4AxMKixvG8KUGXrcYMSc4k4emnuxKeBi6DYIoa3E86XZ5KE_RntQ2bZEu-IIaBHrW2tGXRD5b-hqyi3kxqDyRMYd4qyM1On4H5xhKSNV1qpukQROM4A8lph7zNFW)/cloud/3/x9ksaba/s/live-720.m3u8#cell=lcf2-eu-north-1a
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(_WDmou8EEg7S0_J_pVML71lS5pEIX_o8aoWUCyMNYXSUbeLbbtWJ12HD7bwmIFGYD08IWwodvn4f0AKaBwh-JU19_UF6g5Zo2TP79YWd73ZBAazpc-J5wH5y9btycD07)/cloud/3/x9ksaba/s/live-480.m3u8#cell=lcf2-eu-north-1a|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
 
 #EXTINF:-1,GEN HD
 https://no.gendigi.net/origin-proxy/playlist.m3u8
 
 #EXTINF:-1, Unicanal HD
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(tKcIYS4Rrs2aWZp8zsAOUZ8QcgiZXTSX88fdGDQ7pLLQbRTDEorgEMJFGboUQYhjg6_hLfip-Fb7mLcb_MgksLWU2MGLjQ7gOxKo10tmZrekVdO5qhACm6gR8Hvb8Bv3)/cloud/3/x9ko9z8/s/live-720.m3u8#cell=lcf2-eu-north-1b
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(zh4HKALeGvFf5joQy0h9ZACCxcfZ1_vaTu3Z-eSaG_OdG0FNhybcqD1IrXGEtT1g_lzJ08TpCMvO4FbLp1H-84_CCI5O4Ebp-HA8S1MPK0O1bHVErd7A7i6OVEP7Elpi)/cloud/3/x9ko9z8/s/live-720.m3u8#cell=lcf2-eu-north-1b|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
 
 #EXTINF:-1,TeleFuturo SD
 https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_baja/playlist.m3u8?admin=nacion
@@ -16,10 +16,10 @@ https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_baja/playlist.m3u8?a
 https://rockandpop.b-cdn.net/720p.m3u8
 
 #EXTINF:-1,La Popu TV
-https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=15b80414806d90a373c282f1927d66bfb6acdbc48d763f501f6fc620fc0fcd88&exp=1781646729
+https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/chunklist_w1119855229.m3u8?k=9229364381c0f689630c8a8e788e8aeee703dfbfdbfc3fdf9522bcace1ce2589&exp=1782339279|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgentv.desdepylabs.com%2F
 
 #EXTINF:-1,ABC Cardinal
-https://dmxleo.dailymotion.com/cdn/manifest/video/kQRS6ZAjGuMkByE4Mtc.m3u8?bs=1&rid=0&cookie_sync_ab_gk=1&reader_gdpr_flag=0&reader_gdpr_consent=&gdpr_binary_consent=opt-out&gdpr_comes_from_infopack=0&reader_us_privacy=1---&eb=https%3A%2F%2Fwww.abc.com.py%2F
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(Bus6yuItakcuTBBiH7lYOhm42CNEIxE96HgiLbuePZk2SFIqsjpqEDBttxqR5hydrSNPSJb97-hjod2KX5krDLdxVx5dDhGizdiplK3dSMpEuEXDbegG75IQ2ecINbfa)/cloud/3/x9skr3m/d/live-720.m3u8#cell=lcf2-eu-north-1b|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
 
 #EXTINF:-1,Almaya TV
 https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
