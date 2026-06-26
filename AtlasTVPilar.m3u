@@ -1,13 +1,13 @@
 #EXTM3U
 
 #EXTINF:-1,Trece
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(41hurZw9El0HntC-UBcA3CT40Utezu9PIr9Hm1eAfn4I2qIi-UojH9xz28ixSW6mFDbrOLbM4uczGIYK1DG9HYf8ulgud3RJfVR02wsc2-weeU5BVtcsdFwWDDHxIfTv)/cloud/3/x9ksaba/s/live-480.m3u8#cell=lcf2-eu-north-1a|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(WyGiGywYuvwcKhttRuxEJYvo-pRdeH2FuOVIZXKX1HIJ0H9B3wGDjA-XeIpE8QvzPgd-1iL53oXujWPQ6sfF1gMCIaMWsrsbQPPuWS4r5cPBEN-Zs3Ux9mTnbbZdrtqL)/cloud/3/x9ksaba/s/live-720.m3u8#cell=lcf2-eu-north-1a|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
 
 #EXTINF:-1,GEN HD
 https://no.gendigi.net/origin-proxy/playlist.m3u8
 
 #EXTINF:-1, Unicanal HD
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(dHxcJkWcW3p3xw52bacfCmi4iS43gDrDyOGpvpzy8sAHQfyqxv2Goh_zJUfvP2qpCW2xTeoTD1vyt5A3DXPrnvmWYu6PeMInBGv5sC3xL7HBYeAI14JLPDRyyrozpboQ)/cloud/3/x9ko9z8/s/live-720.m3u8#cell=lcf2-eu-north-1b|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(yOzjzZy5xQF-ylNA2LCHXySxm5Invg4Ep769sRIp5hCxC-KmA6zwI4VrGGfEgz_jr_IAzyvZOxVlBGXI4rFiOh9AsnP2JkKK-AxtzeARKTyA18OrIPt351t9lygnx0C3)/cloud/3/x9ko9z8/s/live-720.m3u8#cell=lcf2-eu-north-1b|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
 
 #EXTINF:-1,TeleFuturo SD
 https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_baja/playlist.m3u8?admin=nacion
@@ -16,10 +16,10 @@ https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_baja/playlist.m3u8?a
 https://rockandpop.b-cdn.net/720p.m3u8
 
 #EXTINF:-1,La Popu TV
-https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/chunklist_w1119855229.m3u8?k=9229364381c0f689630c8a8e788e8aeee703dfbfdbfc3fdf9522bcace1ce2589&exp=1782339279|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgentv.desdepylabs.com%2F
+https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/chunklist_w1568517381.m3u8?k=52ca808d2ec05ef9f4e206dbb15decc51cafb008a73df986e24d9c29540b8fc8&exp=1782432947|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgentv.desdepylabs.com%2F
 
 #EXTINF:-1,ABC Cardinal
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(Bus6yuItakcuTBBiH7lYOhm42CNEIxE96HgiLbuePZk2SFIqsjpqEDBttxqR5hydrSNPSJb97-hjod2KX5krDLdxVx5dDhGizdiplK3dSMpEuEXDbegG75IQ2ecINbfa)/cloud/3/x9skr3m/d/live-720.m3u8#cell=lcf2-eu-north-1b|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(dqUI0ZFfc-CwDx6UVLa_d8IjdvuISzACySCTLopQgBySR4bcBWO7V-9oFC30dccHZDIyhUQo-7hYMA67dD2Vb8xr_BTW1ffmQhI2AlZAKajnD6Ht8Aq7gH7rSStQRcYG)/cloud/3/x9skr3m/d/live-480.m3u8#cell=lcf2-eu-north-1b|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
 
 #EXTINF:-1,Almaya TV
 https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
