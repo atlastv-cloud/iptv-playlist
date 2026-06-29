@@ -21,6 +21,12 @@ https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/chunklist_w17743
 #EXTINF:-1,La Popu TV II
 https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=4fb2a1347b33f7227c73c2e60acf6b34b352df226a997c3f9145ea5cb8e6ffab&exp=1782672929
 
+#EXTINF:-1,C9N
+https://d2b5h5wyivfnfl.cloudfront.net/live/48f53430-9014-4459-a048-6169dac14140/medialist_15609871089997455276_hls.m3u8
+
+#EXTINF:-1,Live CNEWS
+https://live.eu-north-1a.cf.dmcdn.net/sec2(GOCZoE68GMUPZ1iNHaYzsRaqwDpswP-Bo2mHKcC2Ztnqsk0J88wUeIRB9oMbvPDgIDD5jDzsfRWpVvqJljKaX74KuDI9Vy8ZW4ui3GlIhxdZ9o_PZyi4ZEePxOhou5n_)/dm/3/x3b68jn/d/live-1080@60.m3u8#cell=lcf-eu-north-1a
+
 #EXTINF:-1,ABC Cardinal
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(dqUI0ZFfc-CwDx6UVLa_d8IjdvuISzACySCTLopQgBySR4bcBWO7V-9oFC30dccHZDIyhUQo-7hYMA67dD2Vb8xr_BTW1ffmQhI2AlZAKajnD6Ht8Aq7gH7rSStQRcYG)/cloud/3/x9skr3m/d/live-480.m3u8#cell=lcf2-eu-north-1b|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F142.0.0.0%20Safari%2F537.36&Referer=https%3A%2F%2Fgeo.dailymotion.com%2F
 
@@ -83,6 +89,3 @@ https://cloud.tvomix.com/CUMBIAMIX/index.m3u8
 
 #EXTINF:-1,TV Corrientes
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
-
-#EXTINF:-1,Live CNEWS
-https://live.eu-north-1a.cf.dmcdn.net/sec2(GOCZoE68GMUPZ1iNHaYzsRaqwDpswP-Bo2mHKcC2Ztnqsk0J88wUeIRB9oMbvPDgIDD5jDzsfRWpVvqJljKaX74KuDI9Vy8ZW4ui3GlIhxdZ9o_PZyi4ZEePxOhou5n_)/dm/3/x3b68jn/d/live-1080@60.m3u8#cell=lcf-eu-north-1a
