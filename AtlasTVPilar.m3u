@@ -1,13 +1,13 @@
 #EXTM3U
 
 #EXTINF:-1,Trece
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(Xo3-SDSv29QJBmDc5mVav1-Gl1yvg-FNUnnv1wXuSGM8aO82R7DGjXaM8XApBHl6X80b_KX0qWn6B_AsABkxgwIkRy_HMNttMi_PqdunfjyMy6S2wsIzNFPhHCQrRZlt)/cloud/3/x9ksaba/s/live-720.m3u8#cell=lcf2-eu-north-1a
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(bYh-C3D9Hqd3KSWDOHZlt7hg3PxQlwepmwQmkssJ-vWq2bURrX1tT7KdOeK5P3ISOwjZoNoaZ-WbJeXx7U0opq40Wnxyulc8rxsUD6TA9x-192e3BqI5UdsSrfOBcJwC)/cloud/3/x9ksaba/s/live-720.m3u8
 
 #EXTINF:-1,GEN HD
 https://no.gendigi.net/origin-proxy/playlist.m3u8
 
 #EXTINF:-1, Unicanal HD
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(CPv8Mcr8pyhXRpyo9S9htcyuwO51DNAGRsbL8e59pUATIUpVhzpY9_AMM1T-AmikSh_cu4AlN1gdeIy71iQXBUkb3GhS76vrRmXBq-jWw690QgN20dbUDxl-FEQxoW1E)/cloud/3/x9ko9z8/s/live-720.m3u8#cell=lcf2-eu-north-1b
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(EW5AdR-XKkKA4iIafhUnd0lLmXh0k-1JblB9QAS0Y1NanUd_kUxwl9OMYxonkXOL-1IjjZjtFuU8ONS3yemMMqcOcKTusrKpoSu9ERiiG45NL2XMgxn04an-pubKL_Ey)/cloud/3/x9ko9z8/s/live-720.m3u8
 
 #EXTINF:-1,TeleFuturo SD
 https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_baja/playlist.m3u8?admin=nacion
