@@ -57,8 +57,8 @@ https://video.hostingcaaguazu.com:19360/tvairepy/tvairepy.m3u8
 #EXTINF:-1,Atlas Sport (Intro)
 https://raw.githubusercontent.com/atlastv-cloud/intro-elite-hls/refs/heads/main/ATLAS-SPORT-Intro-2K-Elite-Live-Portal21Studio.m3u8
 
-Atlas Sport Prueba || _0mh3xOVww0 || Deportes
-https://www.youtube.com/live/_0mh3xOVww0?si=OjuCRGAmuzI_hZOB
+#EXTINF:-1 tvg-id="_0mh3xOVww0" tvg-name="Atlas Sport Prueba" group-title="Deportes", Atlas Sport Prueba
+https://www.youtube.com/watch?v=1oh9IEwBbFY
 
 #EXTINF:-1,NPY
 https://copacogen.desdeparaguay.net/npy/npy_py_alta/playlist.m3u8?admin=tvaccion
