@@ -15,9 +15,6 @@ https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_alta/playlist.m3u8?k
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://nanduti.com.py/_next/static/media/nanduti_radio_NAGATIVO.178913a6.svg",Ñandutí TV
 https://rockandpop.b-cdn.net/720p.m3u8
 
-Dale, acá está la playlist M3U completa:
-#EXTM3U x-tvg-url="http://epg.example.com/guide.xml" url-tvg="http://epg.example.com/guide.xml"
-
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://i0.wp.com/television.com.py/wp-content/uploads/2017/04/C9N-logo.png?fit=1029%2C499&ssl=1",C9N
 https://d2b5h5wyivfnfl.cloudfront.net/live/48f53430-9014-4459-a048-6169dac14140/medialist_15609871089997455276_hls.m3u8
 
@@ -33,53 +30,56 @@ https://copacotf.desdeparaguay.net/latele/latele_py_baja/chunklist_w1077902691.m
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ltlcolor.png",La Tele HD
 https://copacotf.desdeparaguay.net/latele/latele_py_alta/playlist.m3u8?admin=tvaccion
 
-#EXTINF:-1 group-title="Deportes",Ñande Portetepe Sport
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://tvonline.com.py/tv/img/nandeportetepe.png",Ñande Portetepe Sport
 https://video.hostingcaaguazu.com:19360/nandeportetepe/nandeportetepe.m3u8
 
-#EXTINF:-1,Oasis TV
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://i.imgur.com/TEr1U90.png",Oasis TV
 https://video.hostingcaaguazu.com:19360/oasistv/oasistv.m3u8
 
-#EXTINF:-1,RB TV
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://mediosenparaguay.com/gallery_gen/5d721fd7f937070f9d26fda6453899b8_300x300_fill.jpg",RB TV
 https://video.hostingcaaguazu.com:19360/rbtv/rbtv.m3u8
 
-#EXTINF:-1,RED DIGITAL SAN PEDRO
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://scontent.fagt4-1.fna.fbcdn.net/v/t39.30808-6/346267223_622384796164243_5922625805869805837_n.jpg?stp=dst-jpg_tt6&cstp=mx2005x1976&ctp=s2005x1976&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=FrAWDhmc6CQQ7kNvwFYVnyR&_nc_oc=Adryy0I8f7vUQ4yQfGtqpiEHR8nt1saP-pBeO0_H_qJEWN1Dlr8qtyJ9nVpWPKteCwiSJOMN0JzJf-myFDwaatEe&_nc_zt=23&_nc_ht=scontent.fagt4-1.fna&_nc_gid=aJFO8sXzPX4PzsqL8EnhDQ&_nc_ss=7b2a8&oh=00_Af--aCOJqimglI3U6MNVCZfrGGJZJM2YAMbxWInOPA5SGw&oe=6A488677",RED DIGITAL SAN PEDRO
 https://video.hostingcaaguazu.com:19360/reddigitalsanpedro/reddigitalsanpedro.m3u8
 
-#EXTINF:-1,TV AIRE PARAGUAY
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_lXA1uhTGK-mRyH3Dsrhmf2ZFW7lB-oKnTfHRmkzxmHY-M=s900-c-k-c0x00ffffff-no-rj",TV AIRE PARAGUAY
 https://video.hostingcaaguazu.com:19360/tvairepy/tvairepy.m3u8
 
-#EXTINF:-1 group-title="Deportes",Atlas Sport (Intro)
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://media.discordapp.net/attachments/1467614662928502887/1521196930275737670/YouTube_banner.jpeg?ex=6a43f48a&is=6a42a30a&hm=d4b2cd0ecf15d6596164e9e440ee0197503e074675b88d4df6fb3b0fde80fb02&=&format=webp&width=860&height=480",Atlas Sport (Intro)
 https://raw.githubusercontent.com/atlastv-cloud/intro-elite-hls/refs/heads/main/ATLAS-SPORT-Intro-2K-Elite-Live-Portal21Studio.m3u8
 
-#EXTINF:-1,NPY
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d9/NPY_Logo2023.png",NPY
 https://copacogen.desdeparaguay.net/npy/npy_py_alta/playlist.m3u8?admin=tvaccion
 
-#EXTINF:-1,Gobierno de Paraguay
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/00/ParaguayTV2019.png/revision/latest?cb=20210512141435&path-prefix=es",Gobierno de Paraguay
 https://stream.paraguaytv.gov.py/memfs/bbe36fed-9b49-4d1d-adaa-4bd6d1b2e386.m3u8
 
-#EXTINF:-1,RCC
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://i.ytimg.com/vi/9oQWKD-cZi4/maxresdefault.jpg",RCC
 https://copacoradios.desdeparaguay.net/rcctv/rcctv/playlist.m3u8?admin=nacion
 
-#EXTINF:-1,COSMOS TV
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/22/COSMOS_logo2K24-100.jpg",COSMOS TV
 https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8
 
-#EXTINF:-1,E40 Paraguay
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://grupovierci.brightspotcdn.com/dims4/default/853d5fc/2147483647/strip/true/crop/994x472+0+0/resize/400x190!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F66%2Fbd%2F3159d2b245dbb75fe3c0aad32eac%2Flogo-e40-2026.png",E40 Paraguay
 https://copacotf.desdeparaguay.net/e40tv/e40tv_py_alta/playlist.m3u8?admin=tvaccion
 
-#EXTINF:-1,Venus
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://i0.wp.com/logoroga.com/wp-content/uploads/2012/04/venus.png?fit=500%2C375&ssl=1",Venus
 https://tigocloud.desdeparaguay.net/venusmedia/venusmedia/playlist.m3u8
 
-#EXTINF:-1,America TV Argentina
+#EXTINF:-1 group-title="Argentina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png",America TV Argentina
 https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8
 
-#EXTINF:-1,Aire de Santa Fé Argentina
+#EXTINF:-1 group-title="Argentina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/02/Aire_de_Santa_Fe_16249327825119739.jpg",Aire de Santa Fé Argentina
 https://mdstrm.com/live-stream-playlist/6931a0eb06778645348008e0.m3u8
 
-#EXTINF:-1 group-title="Deportes",TyC Sports Argentina
+#EXTINF:-1 group-title="Argentina" tvg-logo="https://freecast.com/_next/image?url=https%3A%2F%2Fd3e3bui7xn67l.cloudfront.net%2Fcms_media%2Fmedia%2Flive%2Fchannel%2Ff9ed6770-e2fe-4147-81f6-a083cf6390d4-1771856213.119908.256x256.jpg&w=640&q=75",TyC Sports Argentina
 https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
 
-#EXTINF:-1,Cumbia MIX Argentina
+#EXTINF:-1 group-title="Argentina" tvg-logo="https://play-lh.googleusercontent.com/FtQq22BpZub6QdQ-i8oXfCcOJ7jANYHslFxm9V_bSZMFHa9Ym_KSUD5VxZwcLkVY2INX8Pfx4kupbZkTY0az",Cumbia MIX Argentina
 https://cloud.tvomix.com/CUMBIAMIX/index.m3u8
 
-#EXTINF:-1,TV Corrientes
+#EXTINF:-1 group-title="Argentina" tvg-logo="https://d2sc6joxujpqtv.cloudfront.net/Logo_principal.svg",TV Corrientes
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
+
+#EXTINF:-1 group-title="Argentina" tvg-logo="https://www.corrientes.tv/ctvnoticias/wp-content/uploads/2021/06/CTV-NOTICIAS_ok_100x115.png",TV Corrientes
+https://vivo.solumedia.com:19360/telemedia/telemedia.m3u8
