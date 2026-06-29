@@ -83,3 +83,6 @@ https://cloud.tvomix.com/CUMBIAMIX/index.m3u8
 
 #EXTINF:-1,TV Corrientes
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
+
+#EXTINF:-1,Live CNEWS
+https://live.eu-north-1a.cf.dmcdn.net/sec2(GOCZoE68GMUPZ1iNHaYzsRaqwDpswP-Bo2mHKcC2Ztnqsk0J88wUeIRB9oMbvPDgIDD5jDzsfRWpVvqJljKaX74KuDI9Vy8ZW4ui3GlIhxdZ9o_PZyi4ZEePxOhou5n_)/dm/3/x3b68jn/d/live-1080@60.m3u8#cell=lcf-eu-north-1a
