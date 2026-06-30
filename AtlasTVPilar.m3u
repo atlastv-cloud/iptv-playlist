@@ -22,7 +22,7 @@ https://d2b5h5wyivfnfl.cloudfront.net/live/48f53430-9014-4459-a048-6169dac14140/
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(D_yxEcwp7eIkqBIGOAqoGrlp8Oiwmm_Q_IXvN8FjOjJGhk3SJrR4Wu6E3B3wbxluGu4SEMjl-cH1Hjbenx96_Kq0CJZJlwXwmwrYrXWVe4tn79cMWwOS4GiIcrEMiTLq)/cloud/3/x9skr3m/d/live-720.m3u8#cell=lcf2-eu-north-1b
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://lanacionpy.nyc3.digitaloceanspaces.com/img/logo-popu-tv.png",La Popu
-https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/chunklist_w306833641.m3u8
+https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=a8c6769973e190e56abddc552fff595ebafdecd97994def6755637bf41c19226&exp=1782841814
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://gestor.almaya.com.py/views/img/plantilla/logo.png",Almaya TV
 https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
