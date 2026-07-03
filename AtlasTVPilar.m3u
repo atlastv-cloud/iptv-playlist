@@ -1,7 +1,7 @@
 #EXTM3U x-tvg-url="http://epg.example.com/guide.xml" url-tvg="http://epg.example.com/guide.xml"
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://media.trece.com.py/sites/2/2025/09/logotrece_2025.webp",Trece
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(YhzpamiUDE8UgHokBJELW6QcEkop8WyplJVBuALxvw1E2-GdBb53_ROPenrJmyPTXxBuTqVub1Uibv4dUmOj5qB4v7ZbNxVe9YTHQpaKBvl8F4VLqJ7yhdIwJTyPM9VuZRVGw11PbQCTFnTgfhtC8A)/cloud/3/xak2neu/s/live-720.m3u8
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(YhzpamiUDE8UgHokBJELW6QcEkop8WyplJVBuALxvw1E2-GdBb53_ROPenrJmyPTXxBuTqVub1Uibv4dUmOj5qB4v7ZbNxVe9YTHQpaKBvl8F4VLqJ7yhdIwJTyPM9VuZRVGw11PbQCTFnTgfhtC8A)/cloud/3/xak2neu/s/live-720.m3u8#cell=lcf2-eu-north-1b
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV3EkyMzkDOEzag41tRjz59O3pC0Nar7SabfXNxeXLRT_2OrtH8znisKfmH_aGwtfQKd-HdK_F8o6ZuDMQIC32KDwvI1xLg_ruUElRzQn5_-3rtKbjPgZJCYnurz8_22yWcKmkGctfQCCn/w1200-h630-p-k-no-nu/GEN+en+vivo.jpg",GEN HD
 https://no.gendigi.net/origin-proxy/playlist.m3u8
