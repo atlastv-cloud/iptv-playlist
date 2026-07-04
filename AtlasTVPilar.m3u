@@ -19,10 +19,10 @@ https://rockandpop.b-cdn.net/720p.m3u8
 https://d2b5h5wyivfnfl.cloudfront.net/live/48f53430-9014-4459-a048-6169dac14140/medialist_15609871089997455276_hls.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://static2.mytuner.mobi/media/tvos_radios/292/abc-985-fm.f47b08ed.jpg",ABC TV
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(7FfNJVig2wBC1tAzIRmoamnIWOOoUQIT9Gv9g2Et9oLRAn0YHQkHy5bla6FkSk2-uy4H50vEUtC5hmt8OWZLEXSqHx241DCsuBRmkZiBtVm5QFrWUNs8AxOG92R7kIEM)/cloud/3/x9skr3m/d/live-720.m3u8#cell=lcf2-eu-north-1b
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(EF-G4MpPWaKAV1R2_Fm00OdoLyWJGOpioqxn7oD8P3UCc_JkDbnS0455rzK-HsEYt5_IrMmFD4e-R5v35en7pWk3gwgflI1SwQhthHf2oxOc_eqN3P8FCirUE1qiCZ5P)/cloud/3/x9skr3m/d/live-720.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://lanacionpy.nyc3.digitaloceanspaces.com/img/logo-popu-tv.png",La Popu
-https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=4673709495b0fdb2170e782d564a5d8aeb2d1cac453d6cbc537c9eaeb723dfeb&exp=1783182551
+https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=d5b73389ccfa2e3c36187b91589ab976e7106de9d8d18469311efc7c661b1dd7&exp=1783183457
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://gestor.almaya.com.py/views/img/plantilla/logo.png",Almaya TV
 https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
