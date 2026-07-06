@@ -1,13 +1,13 @@
 #EXTM3U x-tvg-url="http://epg.example.com/guide.xml" url-tvg="http://epg.example.com/guide.xml"
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://media.trece.com.py/sites/2/2025/09/logotrece_2025.webp",Trece
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(NIZqefaQb0P0Pqq3n4MZ10Zq905hSSq5wtJJn7KaN3llqeyzlDbL29h8x3n0HorQh_edadT8MUwYsSREU3QaMGrnykUFGLLpOKHICfKsFzYrJNuLjbYxdvDQgWEjKybgm0FIRXpq1hOnIVqcpbQHEA)/cloud/3/xak2neu/s/live-720.m3u8#cell=lcf2-eu-north-1b
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(p0lwM8Va6pgnjlAXsF0vND-r_K3tkxQwzazi1q1AzAHGw1iJjtrQKOBZPb427RPm08KSJcZo-nQ02_qzwIzGEfwYeEoa7FOYtF8g4M47wNgPsi8HirIX8_-rLJI62M42lXS_D_9CPoDdQ3AAJIlYVA)/cloud/3/xak2neu/s/live-720.m3u8#cell=lcf2-eu-north-1b
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV3EkyMzkDOEzag41tRjz59O3pC0Nar7SabfXNxeXLRT_2OrtH8znisKfmH_aGwtfQKd-HdK_F8o6ZuDMQIC32KDwvI1xLg_ruUElRzQn5_-3rtKbjPgZJCYnurz8_22yWcKmkGctfQCCn/w1200-h630-p-k-no-nu/GEN+en+vivo.jpg",GEN HD
 https://no.gendigi.net/origin-proxy/playlist.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://i.imgur.com/yMEsDIy.png",Unicanal HD
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(xpW-gNGSuo4H-eNXc_hanQZ1_V9WHdYJ5kL5eIbzSZIWhtjy7K46dhhNn39z02hkTQThBIjMPR4FDG_mhm9LdsczwyO8KMvcw8iCixWs-KCkJOu_Lu0McqfL_NiSg5J58JzPIepp5M0KNIgYoC1hzA)/cloud/3/xak2lou/s/live-720.m3u8#cell=lcf2-eu-north-1a
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(1YcMMAwrHDZKkddset3gwKMkZ9k3ub-fATtNKFwqhJ4-vySn60wqaQalcc6LUIjVHtlwBbi1aDexIn0KpQs45W-3fk1985vK52wkTKWQwt1Ho2MZq5VXwVxmp3eEDGptnVddUp7Dd87QlpBvQA2_lg)/cloud/3/xak2lou/s/live-720.m3u8#cell=lcf2-eu-north-1a
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://grupovierci.brightspotcdn.com/dims4/default/ee23592/2147483647/strip/true/crop/800x806+0+0/resize/400x403!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F7e%2F5c%2Fdf2570194e409912010229bf99b6%2Flogo-telefuturo.webp",TeleFuturo SD
 https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_alta/playlist.m3u8?k=7eb050905ed3fdaf96b11bb42b68cf9245f41f817f4e01cdb3aeba631f37683f&exp=1782737986
