@@ -1,13 +1,13 @@
 #EXTM3U x-tvg-url="http://epg.example.com/guide.xml" url-tvg="http://epg.example.com/guide.xml"
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://media.trece.com.py/sites/2/2025/09/logotrece_2025.webp",Trece
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(Odkxra1STCwQHqHc06A2OPx7-yjqXwd5Mh27_fMrn0caE3jXJAxLjkT_SAA5X4o0VoJsEUeCFCqbCW_-VoLRXABn5U_H8rDIgo5K9WtgIPBh7qWrxezYcrwaU0YvvFoX41wqPreBqIYoKspEChUjww)/cloud/3/xak2neu/s/live-720.m3u8#cell=lcf2-eu-north-1b
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(NIZqefaQb0P0Pqq3n4MZ10Zq905hSSq5wtJJn7KaN3llqeyzlDbL29h8x3n0HorQh_edadT8MUwYsSREU3QaMGrnykUFGLLpOKHICfKsFzYrJNuLjbYxdvDQgWEjKybgm0FIRXpq1hOnIVqcpbQHEA)/cloud/3/xak2neu/s/live-720.m3u8#cell=lcf2-eu-north-1b
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV3EkyMzkDOEzag41tRjz59O3pC0Nar7SabfXNxeXLRT_2OrtH8znisKfmH_aGwtfQKd-HdK_F8o6ZuDMQIC32KDwvI1xLg_ruUElRzQn5_-3rtKbjPgZJCYnurz8_22yWcKmkGctfQCCn/w1200-h630-p-k-no-nu/GEN+en+vivo.jpg",GEN HD
 https://no.gendigi.net/origin-proxy/playlist.m3u8
 
-#EXTINF:-1 group-title="Paraguay" tvg-logo="https://nyc3.digitaloceanspaces.com/media-unicanal/2025/06/Unicanal-logo.webp",Unicanal HD
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(McnoMc1HEeL2gBHf7d182rJEsl9OzJh0vDDTt2J8ocbZZDxMXz0K3Dq4_IFaVUhvlgymkyjOl8HXRK6ra9RKBCNqVD628yl8Sc0as8kpzTPCHBr8kTyzy0333k1btXaA5Tak0XURN7PRvWcI4dgfMw)/cloud/3/xak2lou/s/live-720.m3u8#cell=lcf2-eu-north-1a
+#EXTINF:-1 group-title="Paraguay" tvg-logo="https://i.imgur.com/yMEsDIy.png",Unicanal HD
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(xpW-gNGSuo4H-eNXc_hanQZ1_V9WHdYJ5kL5eIbzSZIWhtjy7K46dhhNn39z02hkTQThBIjMPR4FDG_mhm9LdsczwyO8KMvcw8iCixWs-KCkJOu_Lu0McqfL_NiSg5J58JzPIepp5M0KNIgYoC1hzA)/cloud/3/xak2lou/s/live-720.m3u8#cell=lcf2-eu-north-1a
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://grupovierci.brightspotcdn.com/dims4/default/ee23592/2147483647/strip/true/crop/800x806+0+0/resize/400x403!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F7e%2F5c%2Fdf2570194e409912010229bf99b6%2Flogo-telefuturo.webp",TeleFuturo SD
 https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_alta/playlist.m3u8?k=7eb050905ed3fdaf96b11bb42b68cf9245f41f817f4e01cdb3aeba631f37683f&exp=1782737986
