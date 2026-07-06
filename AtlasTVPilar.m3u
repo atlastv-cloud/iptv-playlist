@@ -34,9 +34,6 @@ https://tigocloudgen.desdeparaguay.net/satelitaltv/satelitaltv/playlist.m3u8
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://gestor.almaya.com.py/views/img/plantilla/logo.png",Almaya TV
 https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
 
-#EXTINF:-1 tvg-id="AXNLatinAmerica.us@South" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN Latin America South
-http://45.228.235.116:8000/play/a0iy/index.m3u8
-
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ltlcolor.png",La Tele
 https://copacotf.desdeparaguay.net/latele/latele_py_baja/chunklist_w1077902691.m3u8?admin=tvaccion
 
@@ -94,8 +91,8 @@ https://cloud.tvomix.com/CUMBIAMIX/index.m3u8
 #EXTINF:-1 group-title="Argentina" tvg-logo="https://yt3.googleusercontent.com/YyHeczhiz8V-Jfxb_KMSp4U58_8hkT1DVJfjOi4HkR8OlxGa60NWXHtdzsLh6h7P9gIh-2YQmj4=s900-c-k-c0x00ffffff-no-rj",Corrientes EN EL AIRE
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
 
-#EXTINF:-1 group-title="Argentina" tvg-logo="https://www.corrientes.tv/ctvnoticias/wp-content/uploads/2021/06/CTV-NOTICIAS_ok_100x115.png",TV Corrientes
-https://vivo.solumedia.com:19360/telemedia/telemedia.m3u8
+#EXTINF:-1 tvg-id="AXNLatinAmerica.us@South" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN Latin America South
+http://45.228.235.116:8000/play/a0iy/index.m3u8
 
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Animation;Kids",Disney Channel Latin America (1080p)
 http://45.185.163.75:8000/play/a02j/index.m3u8
