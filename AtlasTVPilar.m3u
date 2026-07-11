@@ -1,22 +1,19 @@
 #EXTM3U x-tvg-url="http://epg.example.com/guide.xml" url-tvg="http://epg.example.com/guide.xml"
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://media.trece.com.py/sites/2/2025/09/logotrece_2025.webp",Trece
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(p0lwM8Va6pgnjlAXsF0vND-r_K3tkxQwzazi1q1AzAHGw1iJjtrQKOBZPb427RPm08KSJcZo-nQ02_qzwIzGEfwYeEoa7FOYtF8g4M47wNgPsi8HirIX8_-rLJI62M42lXS_D_9CPoDdQ3AAJIlYVA)/cloud/3/xak2neu/s/live-720.m3u8#cell=lcf2-eu-north-1b
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(uKpO_ye_dzRUni7HrZ5fFHjTdeT3sgiMdeIGvnv6DJo_6K9tAkt_JGj70zalL-gIgmP0-bIHtNwvMfJhTI6871NwBBijynwUip9JQdiQvlnZrk21FPoVboSTlrZlvkwG72bWLZvJPGtMexscp-FdnA)/cloud/3/xak2neu/s/live-480.m3u8#cell=lcf2-eu-north-1b
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV3EkyMzkDOEzag41tRjz59O3pC0Nar7SabfXNxeXLRT_2OrtH8znisKfmH_aGwtfQKd-HdK_F8o6ZuDMQIC32KDwvI1xLg_ruUElRzQn5_-3rtKbjPgZJCYnurz8_22yWcKmkGctfQCCn/w1200-h630-p-k-no-nu/GEN+en+vivo.jpg",GEN HD
 https://no.gendigi.net/origin-proxy/playlist.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://i.imgur.com/yMEsDIy.png",Unicanal HD
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(1YcMMAwrHDZKkddset3gwKMkZ9k3ub-fATtNKFwqhJ4-vySn60wqaQalcc6LUIjVHtlwBbi1aDexIn0KpQs45W-3fk1985vK52wkTKWQwt1Ho2MZq5VXwVxmp3eEDGptnVddUp7Dd87QlpBvQA2_lg)/cloud/3/xak2lou/s/live-720.m3u8#cell=lcf2-eu-north-1a
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(Qk1Sw42vB62BrzZuQHvq8Yog_S451C1HljH-HheoFKMJXL_rvJ9VmtSsX9tco1WOTGcW_RBGhOIigeDEnlu658Zec-Pm-BY0UgGxuu6ucrftqsZiuIJpDA3lZ6FiZALT9SRA2jCKPVsQvSyrh1QVwA)/cloud/3/xak2lou/s/live-480.m3u8#cell=lcf2-eu-north-1a
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://grupovierci.brightspotcdn.com/dims4/default/ee23592/2147483647/strip/true/crop/800x806+0+0/resize/400x403!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F7e%2F5c%2Fdf2570194e409912010229bf99b6%2Flogo-telefuturo.webp",TeleFuturo SD
 https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_alta/playlist.m3u8?k=7eb050905ed3fdaf96b11bb42b68cf9245f41f817f4e01cdb3aeba631f37683f&exp=1782737986
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://i0.wp.com/television.com.py/wp-content/uploads/2023/05/LogoNanduti.png?fit=1200%2C675&ssl=1",Ñandutí TV
 https://rockandpop.b-cdn.net/720p.m3u8
-
-#EXTINF:-1 tvg-id="4DmasNoticiasTV.py@SD" tvg-logo="https://i.ibb.co/1fb5BtN/unnamed.png" group-title="News",4DmásNoticias TV (1080p) [Not 24/7]
-https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://i0.wp.com/television.com.py/wp-content/uploads/2017/04/C9N-logo.png?fit=1029%2C499&ssl=1",C9N
 https://d2b5h5wyivfnfl.cloudfront.net/live/48f53430-9014-4459-a048-6169dac14140/medialist_15609871089997455276_hls.m3u8
@@ -33,6 +30,9 @@ https://tigocloudgen.desdeparaguay.net/satelitaltv/satelitaltv/playlist.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://gestor.almaya.com.py/views/img/plantilla/logo.png",Almaya TV
 https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
+
+#EXTINF:-1 tvg-id="4DmasNoticiasTV.py@SD" tvg-logo="https://i.ibb.co/1fb5BtN/unnamed.png" group-title="News",4DmásNoticias TV (1080p) [Not 24/7]
+https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ltlcolor.png",La Tele
 https://copacotf.desdeparaguay.net/latele/latele_py_baja/chunklist_w1077902691.m3u8?admin=tvaccion
