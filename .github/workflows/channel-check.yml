@@ -7,8 +7,6 @@ on:
         description: "Commit resultados al branch (channel_status.md/json)"
         type: boolean
         default: true
-  push:
-    branches: ["arena/**"]   # se auto-dispara al pushear a ramas arena/* (borrar esta línea cuando ya exista en main)
 
 permissions:
   contents: write

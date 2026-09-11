@@ -1,13 +1,19 @@
-name: Update GEN Stream
+name: Auto-update streams
 
 on:
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
+  push:
+    branches: ["arena/**"]  # TEMPORAL (test en rama): quitar cuando el workflow llegue a main
+
+permissions:
+  contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repo
@@ -21,18 +27,55 @@ jobs:
       - name: Install dependencies
         run: |
           pip install playwright requests
-          playwright install chromium
+          playwright install --with-deps chromium
 
-      - name: Run updaters
+      # Cada updater es INDEPENDIENTE: si uno muere (p.ej. GEN rediseñó la web),
+      # los demás siguen actualizándose.
+      - name: Update GEN HD (Playwright sniffer)
+        continue-on-error: true
+        run: python update_gen.py
+
+      - name: Update Trece (Dailymotion)
+        continue-on-error: true
+        run: python update_trece.py
+
+      - name: Update Unicanal HD (Dailymotion)
+        continue-on-error: true
+        run: python update_unicanal.py
+
+      - name: Update ABC TV (abc.com.py -> Dailymotion)
+        continue-on-error: true
+        run: python update_abc.py
+
+      - name: Summary of updaters
+        if: always()
         run: |
-          python update_gen.py
-          python update_trece.py
-          python update_unicanal.py
+          echo "## Updater results — $(date -u +%FT%TZ)" >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"
+          for f in .reports/*.json; do [ -e "$f" ] && cat "$f" && echo >> "$GITHUB_STEP_SUMMARY"; done >> "$GITHUB_STEP_SUMMARY" 2>/dev/null
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          git diff --stat AtlasTVPilar.m3u >> "$GITHUB_STEP_SUMMARY" 2>/dev/null
+          # Anotaciones (visibles vía API, útiles sin acceso al log)
+          for f in .reports/*.json; do
+            [ -e "$f" ] || continue
+            msg=$(python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); print(d["title"], "->", "VALID:" if d.get("valid") else "INVALID:", d.get("note",""), "|", "aplicado" if d.get("applied") else "no aplicado")' "$f")
+            echo "::notice::$msg"
+          done
 
       - name: Commit changes
+        if: always()
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add AtlasTVPilar.m3u
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto update streams"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add AtlasTVPilar.m3u last_good.json 2>/dev/null || true
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "Sin cambios — no se comitea"
+          else
+            git commit -m "Auto update streams $(date -u +%FT%TZ)"
+            n=0
+            until git push origin "HEAD:${GITHUB_REF_NAME}"; do
+              n=$((n+1)); [ $n -ge 4 ] && exit 1
+              sleep 3
+              git pull --rebase origin "${GITHUB_REF_NAME}" || git rebase --abort || true
+            done
+          fi

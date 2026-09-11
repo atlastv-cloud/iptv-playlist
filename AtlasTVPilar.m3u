@@ -4,7 +4,7 @@
 https://video.wilohosting.com:19360/alcancefmtv/alcancefmtv.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV3EkyMzkDOEzag41tRjz59O3pC0Nar7SabfXNxeXLRT_2OrtH8znisKfmH_aGwtfQKd-HdK_F8o6ZuDMQIC32KDwvI1xLg_ruUElRzQn5_-3rtKbjPgZJCYnurz8_22yWcKmkGctfQCCn/w1200-h630-p-k-no-nu/GEN+en+vivo.jpg",GEN HD
-https://no.gendigi.net/origin-proxy/playlist.m3u8
+https://tigocloudgen.desdeparaguay.net/gentv/gentv_py_baja/playlist.m3u8?k=75e3f6a0c6cb0f6ac59baa6dc3f1af089f2bd1dea7e31f40b24434909ee8b01d&exp=1789146503
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://media.trece.com.py/sites/2/2025/09/logotrece_2025.webp",Trece
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(hI37pKnWOutvdAA8Estw1owsKXlIhkzeH64GifLPEY1ARo7Q5t9WqOFhHPXHe7ZuR7lWl4AaD5CtJEVfEzPQq0uvruMEBBRPOGLitaRLmMJwtbOnItPKJ3NNG47sIo4EcpgKMGAvNtU4cxZehAQ0Rg)/cloud/3/xak2neu/s/live-720.m3u8#cell=lcf2-eu-north-1b
@@ -18,11 +18,8 @@ https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_alta/playlist.m3u8?k
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://i0.wp.com/television.com.py/wp-content/uploads/2023/05/LogoNanduti.png?fit=1200%2C675&ssl=1",Ñandutí TV
 https://rockandpop.b-cdn.net/720p.m3u8
 
-#EXTINF:-1 group-title="Paraguay" tvg-logo="https://i0.wp.com/television.com.py/wp-content/uploads/2017/04/C9N-logo.png?fit=1029%2C499&ssl=1",C9N
-https://d2b5h5wyivfnfl.cloudfront.net/live/48f53430-9014-4459-a048-6169dac14140/medialist_15609871089997455276_hls.m3u8
-
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://static2.mytuner.mobi/media/tvos_radios/292/abc-985-fm.f47b08ed.jpg",ABC TV
-https://live2.eu-north-1a.cf.dmcdn.net/sec2(DaMWacHrZz_VWn9ox4ZQS3_r_NduGum1p8D_Hhp1prHKOe9ZuzrXFskukNEkGTze5F0yZOJC4r3l5SDOX1Ed2MMOkBreSrvJ2TmR54A_PTIXrGgkcg3RMmFj2BoKxk5G)/cloud/3/x9skr3m/d/live-720.m3u8#cell=lcf2-eu-north-1a
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(LWb-gaMq7W0JWduY4hLmR4xG1qtxG0SLO8uryqZi-wSlLFwgDaWTjZahA31E5ZEcBxk2_xDwy3DTmi2S_uOOxsGmC4wt5erxjHXMiCGXSQSr5Bw7j6Pst9pEY6_tGkvN)/cloud/3/x9skr3m/d/live-720.m3u8#cell=lcf2-eu-north-1b
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://lanacionpy.nyc3.digitaloceanspaces.com/img/logo-popu-tv.png",La Popu
 https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=d760332bae010b51672a7279adf08f5c1c8258c6f0168408a977a1fb2323c153&exp=1783354466
@@ -30,9 +27,6 @@ https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=
 #EXTINF:-1 tvg-id="Canal8VisionTV.py@SD" tvg-logo="https://i.imgur.com/mKju6hk.png" http-referrer="https://www.visioncomunicaciones.com.py/" group-title="General",Canal 8 Vision TV (1080p)
 #EXTVLCOPT:http-referrer=https://www.visioncomunicaciones.com.py/
 https://tigocloudgen.desdeparaguay.net/satelitaltv/satelitaltv/playlist.m3u8
-
-#EXTINF:-1 group-title="Paraguay" tvg-logo="https://gestor.almaya.com.py/views/img/plantilla/logo.png",Almaya TV
-https://video.hostingcaaguazu.com:19360/almayatv/almayatv.m3u8
 
 #EXTINF:-1 tvg-id="4DmasNoticiasTV.py@SD" tvg-logo="https://i.ibb.co/1fb5BtN/unnamed.png" group-title="News",4DmásNoticias TV (1080p) [Not 24/7]
 https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8
@@ -42,9 +36,6 @@ https://copacotf.desdeparaguay.net/latele/latele_py_baja/chunklist_w1077902691.m
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ltlcolor.png",La Tele HD
 https://copacotf.desdeparaguay.net/latele/latele_py_alta/playlist.m3u8?admin=tvaccion
-
-#EXTINF:-1 group-title="Paraguay" tvg-logo="https://tvonline.com.py/tv/img/nandeportetepe.png",Ñande Portetepe Sport
-https://video.hostingcaaguazu.com:19360/nandeportetepe/nandeportetepe.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://i.imgur.com/TEr1U90.png",Oasis TV
 https://video.hostingcaaguazu.com:19360/oasistv/oasistv.m3u8
@@ -91,9 +82,6 @@ https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-
 #EXTINF:-1 group-title="Argentina" tvg-logo="https://play-lh.googleusercontent.com/FtQq22BpZub6QdQ-i8oXfCcOJ7jANYHslFxm9V_bSZMFHa9Ym_KSUD5VxZwcLkVY2INX8Pfx4kupbZkTY0az",Cumbia MIX Argentina
 https://cloud.tvomix.com/CUMBIAMIX/index.m3u8
 
-#EXTINF:-1 group-title="Argentina" tvg-logo="https://yt3.googleusercontent.com/YyHeczhiz8V-Jfxb_KMSp4U58_8hkT1DVJfjOi4HkR8OlxGa60NWXHtdzsLh6h7P9gIh-2YQmj4=s900-c-k-c0x00ffffff-no-rj",Corrientes EN EL AIRE
-http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
-
 #EXTINF:-1 tvg-id="AXNLatinAmerica.us@South" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN Latin America South
 http://45.228.235.116:8000/play/a0iy/index.m3u8
 
@@ -103,5 +91,3 @@ http://45.185.163.75:8000/play/a02j/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@PanregionalHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Animation;Kids",Disney Channel Latin America Panregional HD (1080p)
 http://190.11.225.124:5000/live/disney_hd/playlist.m3u8
 
-#EXTINF:-1 tvg-id="DisneyJrLatinAmerica.ar@SouthHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Animation;Kids",Disney Jr. Latin America South HD (1080p)
-http://179.60.51.134:8888/DISNEY-JR/index.m3u8
