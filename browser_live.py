@@ -45,6 +45,16 @@ def sniff(page_url, wait_initial=8000, max_clicks=3):
         try:
             page.goto(page_url, timeout=45000, wait_until="domcontentloaded")
             page.wait_for_timeout(wait_initial)
+            # banners de consentimiento de cookies (común en Py/EU) bloquean el player
+            for ctext in ["text=/^\\s*(aceptar (todos|todo)?|accept( all)?|de acuerdo|同意)\\s*$/i",
+                          "#didomi-notice-agree-button", ".qc-cmp2-summary-buttons button"]:
+                try:
+                    loc = page.locator(ctext)
+                    if loc.count():
+                        loc.first.click(timeout=2000)
+                        page.wait_for_timeout(1500)
+                except Exception:
+                    pass
             tries = 0
             while not seen and tries < max_clicks:
                 tries += 1

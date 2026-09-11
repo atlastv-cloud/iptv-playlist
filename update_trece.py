@@ -7,7 +7,9 @@ import streamlib as s
 
 TITLE = "Trece"
 EMBED_REFERER = "https://www.trece.com.py/en-vivo/"  # DM valida el referer del sitio que embebe
-DM_PAGES = ["https://www.dailymotion.com/trecepy", "https://www.trece.com.py/en-vivo/"]
+DM_PAGES = ["https://www.dailymotion.com/trecepy",
+              "https://www.dailymotion.com/embed/video/k4nLYiNrBX8W5jDbSlM?autoplay=true&mute=true",
+              "https://www.trece.com.py/en-vivo/"]
 VIDEO_IDS = ["k4nLYiNrBX8W5jDbSlM", "xak2neu"]  # id histórico + id del path del stream
 
 

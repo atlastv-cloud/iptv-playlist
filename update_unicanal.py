@@ -6,7 +6,9 @@ import streamlib as s
 
 TITLE = "Unicanal HD"
 EMBED_REFERER = "https://www.unicanal.com.py/"  # DM valida el referer del sitio que embebe
-DM_PAGES = ["https://www.dailymotion.com/unicanal", "https://www.unicanal.com.py/"]
+DM_PAGES = ["https://www.dailymotion.com/unicanal",
+              "https://www.dailymotion.com/embed/video/k1mHLKycOlKgo3Db5GI?autoplay=true&mute=true",
+              "https://www.unicanal.com.py/"]
 VIDEO_IDS = ["k1mHLKycOlKgo3Db5GI", "xak2lou"]  # id histórico + id del path del stream
 
 

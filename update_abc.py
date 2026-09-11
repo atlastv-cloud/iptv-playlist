@@ -15,7 +15,9 @@ import streamlib as s
 
 TITLE = "ABC TV"
 PAGE = "https://www.abc.com.py/tv/"
-DM_PAGES = ["https://www.dailymotion.com/canalabctv", PAGE]
+DM_PAGES = ["https://www.dailymotion.com/canalabctv",
+              "https://www.dailymotion.com/embed/video/kQRS6ZAjGuMkByE4Mtc?autoplay=true&mute=true",
+              PAGE]
 FALLBACK_IDS = ["x9skr3m"]
 ID_RE = re.compile(r"(?:embed/video/|dailymotion\.com/(?:video|player/metadata/video)/|player\.html\?video=|video=)([xk][0-9A-Za-z]{5,24})")
 
