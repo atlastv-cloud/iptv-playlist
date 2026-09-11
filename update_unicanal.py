@@ -5,13 +5,14 @@ import sys
 import streamlib as s
 
 TITLE = "Unicanal HD"
+EMBED_REFERER = "https://www.unicanal.com.py/"  # DM valida el referer del sitio que embebe
 VIDEO_IDS = ["k1mHLKycOlKgo3Db5GI", "xak2lou"]  # id histórico + id del path del stream
 
 
 def main():
     fails = []
     for vid in VIDEO_IDS:
-        url, why = s.dailymotion_auto_url(vid)
+        url, why = s.dailymotion_auto_url(vid, referer=EMBED_REFERER)
         if not url:
             print("Unicanal: vid", vid, "falló:", why)
             fails.append(vid + ": " + why)

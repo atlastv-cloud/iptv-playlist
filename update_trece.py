@@ -6,13 +6,14 @@ import sys
 import streamlib as s
 
 TITLE = "Trece"
+EMBED_REFERER = "https://www.trece.com.py/en-vivo/"  # DM valida el referer del sitio que embebe
 VIDEO_IDS = ["k4nLYiNrBX8W5jDbSlM", "xak2neu"]  # id histórico + id del path del stream
 
 
 def main():
     fails = []
     for vid in VIDEO_IDS:
-        url, why = s.dailymotion_auto_url(vid)
+        url, why = s.dailymotion_auto_url(vid, referer=EMBED_REFERER)
         if not url:
             print("Trece: vid", vid, "falló:", why)
             fails.append(vid + ": " + why)

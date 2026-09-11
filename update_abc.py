@@ -46,7 +46,7 @@ def main():
         if vid in tried:
             continue
         tried.append(vid)
-        url, w = s.dailymotion_auto_url(vid)
+        url, w = s.dailymotion_auto_url(vid, referer=PAGE)
         if not url:
             print("ABC TV: vid", vid, "falló:", w)
             fails.append(vid + ": " + w)

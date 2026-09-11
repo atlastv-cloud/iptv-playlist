@@ -91,18 +91,21 @@ def probe_url(url, referrer=None, min_seg_bytes=2048):
         return False, type(e).__name__ + ": " + str(e)[:110], None
 
 
-def dailymotion_auto_url(video_id):
+def dailymotion_auto_url(video_id, referer=None):
     """URL HLS firmada para un id de Dailymotion, con cadena de fallback:
        1) player/metadata API   2) config del embed (hls_source)   3) api público (hls_url).
     Devuelve (url, origen) o (None, motivos_de_fallo)."""
     import re as _re
 
+    referers = [referer] if referer else []
+    referers += [None, "https://www.dailymotion.com/"]
     errors = []
     # 1) metadata API (el clásico) — para lives la respuesta cambió de forma,
     #    pruebo varias rutas conocidas del JSON
     try:
         r = requests.get("https://www.dailymotion.com/player/metadata/video/" + video_id,
-                         headers=hdr(), timeout=TIMEOUT)
+                         headers=hdr(referrer=referer), timeout=TIMEOUT)
+        # si la web tiene embed-restriction, DM exige Referer del dominio dueño del canal
         if r.status_code == 200:
             try:
                 data = r.json()
