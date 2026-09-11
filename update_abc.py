@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Refresca 'ABC TV'.
 
-Estrategia: ABC transmite en Dailymotion; su página (abc.com.py/tv) embebe el
-player con el video-id actual. Hacer matcheo del id desde la página hace que el
-updater sobreviva si ABC rota de id. Fallback: id conocido (x9skr3m, visto en
-los paths /cloud/3/<id>/ de los streams de ABC).
+ABC transmite en Dailymotion; su página (abc.com.py/tv) embebe el player con el
+video-id actual. Hacer matcheo del id desde la página hace que el updater
+sobreviva si ABC rota de id. Fallback: id conocido (x9skr3m). Obtener la URL
+firmada via la cadena metadata->embed->api de streamlib.
 """
 import re
 import sys
@@ -39,19 +39,23 @@ def page_ids():
 def main():
     scraped, why = page_ids()
     print("ABC TV: ids en abc.com.py/tv =", scraped or "[]", "(" + why + ")")
-    tried = []
+    s.report({"title": "ABC-pagina", "url": PAGE, "valid": bool(scraped),
+              "note": "ids scraping=" + str(scraped[:5]) + " (" + why + ")"})
+    tried, fails = [], []
     for vid in scraped + FALLBACK_IDS:
         if vid in tried:
             continue
         tried.append(vid)
         url, w = s.dailymotion_auto_url(vid)
         if not url:
-            print("ABC TV: metadata", vid, "falló:", w)
+            print("ABC TV: vid", vid, "falló:", w)
+            fails.append(vid + ": " + w)
             continue
         ok, note = s.update_entry(TITLE, url)
-        print("ABC TV:", note)
+        print("ABC TV:", note, "(via", w + ")")
         return 0 if ok else 1
-    print("ABC TV: agoté candidatos", tried)
+    s.report({"title": TITLE, "url": "n/a", "valid": False, "applied": False,
+              "note": "DM agotado: " + " || ".join(fails)[:700]})
     return 1
 
 

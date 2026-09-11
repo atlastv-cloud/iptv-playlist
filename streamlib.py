@@ -92,19 +92,53 @@ def probe_url(url, referrer=None, min_seg_bytes=2048):
 
 
 def dailymotion_auto_url(video_id):
-    """URL HLS firmada (qualities.auto) para un id de Dailymotion."""
+    """URL HLS firmada para un id de Dailymotion, con cadena de fallback:
+       1) player/metadata API   2) config del embed (hls_source)   3) api público (hls_url).
+    Devuelve (url, origen) o (None, motivos_de_fallo)."""
+    import re as _re
+
+    errors = []
+    # 1) metadata API (el clásico)
     try:
         r = requests.get("https://www.dailymotion.com/player/metadata/video/" + video_id,
                          headers=hdr(), timeout=TIMEOUT)
-        if r.status_code != 200:
-            return None, "metadata HTTP " + str(r.status_code)
-        data = r.json()
-        try:
-            return data["qualities"]["auto"][0]["url"], "ok"
-        except (KeyError, IndexError, TypeError):
-            return None, "metadata sin qualities.auto (keys: " + ",".join(list(data)[:6]) + ")"
+        if r.status_code == 200:
+            try:
+                return r.json()["qualities"]["auto"][0]["url"], "metadata"
+            except (ValueError, KeyError, IndexError, TypeError) as e:
+                errors.append("metadata:json:" + type(e).__name__)
+        else:
+            errors.append("metadata:HTTP" + str(r.status_code))
     except Exception as e:
-        return None, type(e).__name__ + ": " + str(e)[:110]
+        errors.append("metadata:" + type(e).__name__)
+    # 2) config JSON del embed (para lives trae hls_source)
+    try:
+        r = requests.get("https://www.dailymotion.com/embed/video/" + video_id,
+                         headers=hdr("https://www.dailymotion.com/"), timeout=TIMEOUT)
+        if r.status_code == 200:
+            m = _re.search(r'"hls_source"\s*:\s*"([^"]+)"', r.text)
+            if m:
+                return m.group(1).encode().decode("unicode_escape"), "embed"
+            errors.append("embed:sin hls_source")
+        else:
+            errors.append("embed:HTTP" + str(r.status_code))
+    except Exception as e:
+        errors.append("embed:" + type(e).__name__)
+    # 3) API público (a veces expone hls_url en lives)
+    try:
+        r = requests.get("https://api.dailymotion.com/video/" + video_id,
+                         params={"fields": "id,hls_url,qualified_videos_url"},
+                         headers=hdr(), timeout=TIMEOUT)
+        if r.status_code == 200:
+            url = (r.json() or {}).get("hls_url")
+            if url:
+                return url, "api"
+            errors.append("api:sin hls_url")
+        else:
+            errors.append("api:HTTP" + str(r.status_code))
+    except Exception as e:
+        errors.append("api:" + type(e).__name__)
+    return None, " | ".join(errors)[:600]
 
 
 def load_last_good():
