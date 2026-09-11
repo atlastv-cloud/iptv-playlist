@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
+    inputs:
+      debug_dm:
+        description: "Correr diagnóstico de endpoints Dailymotion"
+        type: boolean
+        default: false
   push:
     branches: ["arena/**"]  # TEMPORAL (test en rama): quitar cuando el workflow llegue a main
 
@@ -28,6 +33,14 @@ jobs:
         run: |
           pip install playwright requests
           playwright install --with-deps chromium
+
+      - name: DM debug dump (bajo demanda)
+        if: ${{ github.event.inputs.debug_dm == 'true' }}
+        continue-on-error: true
+        run: |
+          python debug_dm.py xak2neu
+          python debug_dm.py xak2lou
+          python debug_dm.py kQRS6ZAjGuMkByE4Mtc
 
       # Cada updater es INDEPENDIENTE: si uno muere (p.ej. GEN rediseñó la web),
       # los demás siguen actualizándose.

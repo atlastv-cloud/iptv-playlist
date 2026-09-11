@@ -98,15 +98,28 @@ def dailymotion_auto_url(video_id):
     import re as _re
 
     errors = []
-    # 1) metadata API (el clásico)
+    # 1) metadata API (el clásico) — para lives la respuesta cambió de forma,
+    #    pruebo varias rutas conocidas del JSON
     try:
         r = requests.get("https://www.dailymotion.com/player/metadata/video/" + video_id,
                          headers=hdr(), timeout=TIMEOUT)
         if r.status_code == 200:
             try:
-                return r.json()["qualities"]["auto"][0]["url"], "metadata"
-            except (ValueError, KeyError, IndexError, TypeError) as e:
-                errors.append("metadata:json:" + type(e).__name__)
+                data = r.json()
+                q = data.get("qualities") or {}
+                for key in ("auto", "hls", "hls.128"):
+                    arr = q.get(key)
+                    if arr and arr[0].get("url"):
+                        return arr[0]["url"], "metadata:" + key
+                live = data.get("live") or {}
+                if isinstance(live, dict):
+                    for key in ("hls", "playlist_url"):
+                        if live.get(key):
+                            v = live[key]
+                            return (v[0]["url"] if isinstance(v, list) else v), "metadata:live"
+                errors.append("metadata:sin qualities/live keys=" + ",".join(list(data)[:8]))
+            except ValueError:
+                errors.append("metadata:respuesta no-json")
         else:
             errors.append("metadata:HTTP" + str(r.status_code))
     except Exception as e:
@@ -124,21 +137,40 @@ def dailymotion_auto_url(video_id):
             errors.append("embed:HTTP" + str(r.status_code))
     except Exception as e:
         errors.append("embed:" + type(e).__name__)
-    # 3) API público (a veces expone hls_url en lives)
+    # 3) API público con la key del player (la usan los embeds para live config)
     try:
         r = requests.get("https://api.dailymotion.com/video/" + video_id,
-                         params={"fields": "id,hls_url,qualified_videos_url"},
+                         params={"fields": "id,hls_url,live,qualified_videos_url", "key": "ca97"},
                          headers=hdr(), timeout=TIMEOUT)
         if r.status_code == 200:
-            url = (r.json() or {}).get("hls_url")
+            d = r.json() or {}
+            url = d.get("hls_url")
             if url:
-                return url, "api"
-            errors.append("api:sin hls_url")
+                return url, "api:ca97"
+            live = d.get("live")
+            if isinstance(live, dict) and live.get("hls_urls"):
+                return list(live["hls_urls"].values())[0], "api:ca97:live"
+            errors.append("api:sin hls_url keys=" + ",".join(list(d)[:6]))
         else:
             errors.append("api:HTTP" + str(r.status_code))
     except Exception as e:
         errors.append("api:" + type(e).__name__)
-    return None, " | ".join(errors)[:600]
+    # 4) endpoint de lives para reproductores (l1/live/get)
+    try:
+        r = requests.get("https://www.dailymotion.com/l1/live/get/" + video_id,
+                         params={"stream_format": "playlist", "type": "html5",
+                                 "stream_protocol": "hls"},
+                         headers=hdr(), timeout=TIMEOUT)
+        if r.status_code == 200:
+            m = _re.search(r"https?://[^\"'\s,]+\.m3u8[^\"'\s,]*", r.text)
+            if m:
+                return m.group(1).encode().decode("unicode_escape"), "l1/live"
+            errors.append("l1:sin m3u8 (" + r.text[:80].replace("\n", " ") + ")")
+        else:
+            errors.append("l1:HTTP" + str(r.status_code))
+    except Exception as e:
+        errors.append("l1:" + type(e).__name__)
+    return None, " | ".join(errors)[:700]
 
 
 def load_last_good():
