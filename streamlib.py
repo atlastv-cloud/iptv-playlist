@@ -219,6 +219,25 @@ def report(rep):
         json.dump(rep, f, ensure_ascii=False, indent=1)
 
 
+def browser_fallback(title, pages):
+    """Si la cadena de APIs falla, sniffing de navegador sobre las pages dadas.
+    Devuelve (ok, nota)."""
+    try:
+        import browser_live
+    except ImportError:
+        return False, "browser_live no disponible"
+    for page in pages:
+        urls = browser_live.rank(browser_live.sniff(page))
+        if not urls:
+            continue
+        for u in urls[:3]:
+            ok, note = update_entry(title, u)
+            if ok:
+                return True, "browser(" + page + ") — " + note
+        return False, "browser(" + page + ") capturó " + str(len(urls)) + " pero ninguna validó"
+    return False, "browser: sin captura en " + str(len(pages)) + " páginas"
+
+
 def update_entry(title, url, referrer=None):
     """Valida `url` con probe; sólo si pasa, la escribe en la playlist."""
     ok, note, elapsed = probe_url(url, referrer)

@@ -15,6 +15,7 @@ import streamlib as s
 
 TITLE = "ABC TV"
 PAGE = "https://www.abc.com.py/tv/"
+DM_PAGES = ["https://www.dailymotion.com/canalabctv", PAGE]
 FALLBACK_IDS = ["x9skr3m"]
 ID_RE = re.compile(r"(?:embed/video/|dailymotion\.com/(?:video|player/metadata/video)/|player\.html\?video=|video=)([xk][0-9A-Za-z]{5,24})")
 
@@ -54,8 +55,12 @@ def main():
         ok, note = s.update_entry(TITLE, url)
         print("ABC TV:", note, "(via", w + ")")
         return 0 if ok else 1
+    ok, note = s.browser_fallback(TITLE, DM_PAGES)
+    print(TITLE, "(browser fallback):", note)
+    if ok:
+        return 0
     s.report({"title": TITLE, "url": "n/a", "valid": False, "applied": False,
-              "note": "DM agotado: " + " || ".join(fails)[:700]})
+              "note": "DM agotado: " + " || ".join(fails)[:400] + " || browser: " + note[:200]})
     return 1
 
 

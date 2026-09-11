@@ -7,6 +7,7 @@ import streamlib as s
 
 TITLE = "Trece"
 EMBED_REFERER = "https://www.trece.com.py/en-vivo/"  # DM valida el referer del sitio que embebe
+DM_PAGES = ["https://www.dailymotion.com/trecepy", "https://www.trece.com.py/en-vivo/"]
 VIDEO_IDS = ["k4nLYiNrBX8W5jDbSlM", "xak2neu"]  # id histórico + id del path del stream
 
 
@@ -21,8 +22,12 @@ def main():
         ok, note = s.update_entry(TITLE, url)
         print("Trece:", note, "(via", why + ")")
         return 0 if ok else 1
+    ok, note = s.browser_fallback(TITLE, DM_PAGES)
+    print(TITLE, "(browser fallback):", note)
+    if ok:
+        return 0
     s.report({"title": TITLE, "url": "n/a", "valid": False, "applied": False,
-              "note": "DM agotado: " + " || ".join(fails)[:700]})
+              "note": "DM agotado: " + " || ".join(fails)[:400] + " || browser: " + note[:200]})
     return 1
 
 
