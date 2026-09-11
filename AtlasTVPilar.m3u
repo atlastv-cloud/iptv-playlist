@@ -4,13 +4,13 @@
 https://video.wilohosting.com:19360/alcancefmtv/alcancefmtv.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV3EkyMzkDOEzag41tRjz59O3pC0Nar7SabfXNxeXLRT_2OrtH8znisKfmH_aGwtfQKd-HdK_F8o6ZuDMQIC32KDwvI1xLg_ruUElRzQn5_-3rtKbjPgZJCYnurz8_22yWcKmkGctfQCCn/w1200-h630-p-k-no-nu/GEN+en+vivo.jpg",GEN HD
-https://rds3gen.desdeparaguay.net/gentv/gentv_int_baja/playlist.m3u8?k=6bbd5c5d173235c58045a0a472bde93e8543e04cb07c2e7d9ba7f446d6bc0504&exp=1789149576
+https://rds3gen.desdeparaguay.net/gentv/gentv_int_baja/playlist.m3u8?k=8767e056a5c711fe8418c930f975e1a4ddb20d5d0c164c87b8f2e691ac0640b4&exp=1789149781
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://media.trece.com.py/sites/2/2025/09/logotrece_2025.webp",Trece
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(hI37pKnWOutvdAA8Estw1owsKXlIhkzeH64GifLPEY1ARo7Q5t9WqOFhHPXHe7ZuR7lWl4AaD5CtJEVfEzPQq0uvruMEBBRPOGLitaRLmMJwtbOnItPKJ3NNG47sIo4EcpgKMGAvNtU4cxZehAQ0Rg)/cloud/3/xak2neu/s/live-720.m3u8#cell=lcf2-eu-north-1b
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://i.imgur.com/yMEsDIy.png",Unicanal HD
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(Xi6fAlXM4EbELABeQ1EBTSdWi5-NnQJmpMxHw8QWLis8ZTWlCBldjE1PfXULwGCzKvbo1B-woMjEpiJ7T5KwOScagk0YToAm-kS7jZ3eH-EDjurRX_p7TCGKyd17qoMM5d5wy2bV7um6M6Via5vD8g)/cloud/3/xak2lou/s/live-720.m3u8#cell=lcf2-eu-north-1b
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(-Kl2RWiuRdN2c5LFeOmnWPV0FXLvrc02MnO9NoERUtwYAVplR2mBT2xcx7XaI0TTALXo6MagAkX4IU3v74FwBukWGHzBd9AYagOpg5PO5LR3kbOBtpgJ19LOJY8nN0CIwfFpUlYEqD4d04hnryzgSg)/cloud/3/xak2lou/s/live-380.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://grupovierci.brightspotcdn.com/dims4/default/ee23592/2147483647/strip/true/crop/800x806+0+0/resize/400x403!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F7e%2F5c%2Fdf2570194e409912010229bf99b6%2Flogo-telefuturo.webp",TeleFuturo SD
 https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_alta/playlist.m3u8?k=7eb050905ed3fdaf96b11bb42b68cf9245f41f817f4e01cdb3aeba631f37683f&exp=1782737986
@@ -19,7 +19,7 @@ https://copacotf.desdeparaguay.net/telefuturo/telefuturo_py_alta/playlist.m3u8?k
 https://rockandpop.b-cdn.net/720p.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://static2.mytuner.mobi/media/tvos_radios/292/abc-985-fm.f47b08ed.jpg",ABC TV
-https://live2.eu-north-1b.cf.dmcdn.net/sec2(LWb-gaMq7W0JWduY4hLmR4xG1qtxG0SLO8uryqZi-wSlLFwgDaWTjZahA31E5ZEcBxk2_xDwy3DTmi2S_uOOxsGmC4wt5erxjHXMiCGXSQSr5Bw7j6Pst9pEY6_tGkvN)/cloud/3/x9skr3m/d/live-720.m3u8#cell=lcf2-eu-north-1b
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(WVmo18XgIVWMXe7oKxIm1ncDBywDEuITNhXIhhbH2mZ2IG-i3CYx-_CB-A6_S9MFpTmmpWFIBBsIHo_Y2SSUEvpX_C5LLS9rxn6X1mamsgmbNIqQ0Hrq19s536njWV2-)/cloud/3/x9skr3m/d/live-720.m3u8
 
 #EXTINF:-1 group-title="Paraguay" tvg-logo="https://lanacionpy.nyc3.digitaloceanspaces.com/img/logo-popu-tv.png",La Popu
 https://rds3gen.desdeparaguay.net/universotv/universotv_py_alta/playlist.m3u8?k=d760332bae010b51672a7279adf08f5c1c8258c6f0168408a977a1fb2323c153&exp=1783354466
