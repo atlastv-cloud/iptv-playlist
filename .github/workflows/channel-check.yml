@@ -1,0 +1,56 @@
+name: Channel Health Check
+
+on:
+  workflow_dispatch:
+    inputs:
+      push_results:
+        description: "Commit resultados al branch (channel_status.md/json)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run channel check
+        continue-on-error: true
+        run: |
+          python check_channels.py AtlasTVPilar.m3u | tee channel_check_report.log
+
+      - name: Summary to Step Summary
+        if: always()
+        run: cat channel_status.md >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Echo machine-readable lines (fallback)
+        if: always()
+        run: |
+          grep '^RES ' channel_check_report.log | while IFS= read -r line; do
+            echo "::notice title=chan::$line"
+          done
+
+      - name: Commit results back to branch
+        if: ${{ github.event.inputs.push_results != 'false' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add channel_status.md channel_status.json channel_check_report.log || true
+          git diff --cached --quiet && echo "Sin cambios" || git commit -m "Channel health check $(date -u +%Y-%m-%d)"
+          n=0
+          until git push origin "HEAD:${{ github.ref_name }}" || [ $n -ge 4 ]; do
+            n=$((n+1)); git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" || sleep 5
+          done
