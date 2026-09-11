@@ -7,8 +7,6 @@ on:
         description: "Commit resultados al branch (channel_status.md/json)"
         type: boolean
         default: true
-  push:
-    branches: ["arena/**"]  # TEMPORAL: re-activado para verificación final
 
 permissions:
   contents: write
