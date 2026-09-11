@@ -34,7 +34,7 @@ jobs:
           pip install playwright requests
           playwright install --with-deps chromium
 
-      - name: DM debug dump (bajo demanda: input o marcador DM_DEBUG_MARKER)
+      - name: "DM debug dump (bajo demanda via input o marcador)"
         if: ${{ github.event.inputs.debug_dm == 'true' || hashFiles('DM_DEBUG_MARKER') != '' }}
         continue-on-error: true
         run: |
