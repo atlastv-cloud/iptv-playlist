@@ -27,7 +27,7 @@ def main():
     vid = sys.argv[1] if len(sys.argv) > 1 else "xak2neu"
     for name, mk in ENDPOINTS.items():
         url = mk(vid)
-        params = {"fields": "id,hls_url,live,qualified_videos_url", "key": "ca97"} if name == "api_ca97" else {
+        params = {"fields": "live,usage", "key": "ca97"} if name == "api_ca97" else {
             "stream_format": "playlist", "type": "html5", "stream_protocol": "hls"} if name == "l1_live" else {}
         try:
             r = requests.get(url, params=params, headers=s.hdr(), timeout=15)

@@ -117,7 +117,22 @@ def dailymotion_auto_url(video_id):
                         if live.get(key):
                             v = live[key]
                             return (v[0]["url"] if isinstance(v, list) else v), "metadata:live"
-                errors.append("metadata:sin qualities/live keys=" + ",".join(list(data)[:8]))
+                err = (data.get("error") or {}).get("message", "")[:80]
+                redirect = data.get("url")
+                if redirect:  # id migrado: la respuesta nueva trae la URL canónica
+                    m2 = _re.search(r"/video/([A-Za-z0-9]+)", redirect)
+                    if m2 and m2.group(1) != video_id:
+                        r2 = requests.get("https://www.dailymotion.com/player/metadata/video/" + m2.group(1),
+                                          headers=hdr(), timeout=TIMEOUT)
+                        if r2.status_code == 200:
+                            try:
+                                d2 = r2.json()
+                                arr = (d2.get("qualities") or {}).get("auto")
+                                if arr and arr[0].get("url"):
+                                    return arr[0]["url"], "metadata:redir:" + m2.group(1)
+                            except ValueError:
+                                pass
+                errors.append("metadata:no-qualities err=" + (err or "?"))
             except ValueError:
                 errors.append("metadata:respuesta no-json")
         else:
@@ -137,20 +152,24 @@ def dailymotion_auto_url(video_id):
             errors.append("embed:HTTP" + str(r.status_code))
     except Exception as e:
         errors.append("embed:" + type(e).__name__)
-    # 3) API público con la key del player (la usan los embeds para live config)
+    # 3) API público con la key del player: campo `live` -> hls_urls (el método
+    #    documentado para lives; `hls_url` ya no existe como field)
     try:
         r = requests.get("https://api.dailymotion.com/video/" + video_id,
-                         params={"fields": "id,hls_url,live,qualified_videos_url", "key": "ca97"},
+                         params={"fields": "live,usage", "key": "ca97"},
                          headers=hdr(), timeout=TIMEOUT)
         if r.status_code == 200:
             d = r.json() or {}
-            url = d.get("hls_url")
-            if url:
-                return url, "api:ca97"
             live = d.get("live")
-            if isinstance(live, dict) and live.get("hls_urls"):
-                return list(live["hls_urls"].values())[0], "api:ca97:live"
-            errors.append("api:sin hls_url keys=" + ",".join(list(d)[:6]))
+            if isinstance(live, dict):
+                hu = live.get("hls_urls")
+                if isinstance(hu, dict) and hu:
+                    # valores estilo "2500": "https://...m3u8?..."
+                    best = sorted(hu.items(), key=lambda kv: -int(kv[0]) if kv[0].isdigit() else 0)
+                    return best[0][1], "api:live hls_urls"
+                if live.get("playlist_url"):
+                    return live["playlist_url"], "api:live playlist_url"
+            errors.append("api:live-vacío json=" + json.dumps(d)[:120])
         else:
             errors.append("api:HTTP" + str(r.status_code))
     except Exception as e:
